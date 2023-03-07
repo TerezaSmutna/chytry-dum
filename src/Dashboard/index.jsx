@@ -3,6 +3,7 @@ import './style.css';
 import Lights from '../Lights';
 import Climate from '../Climate';
 import Blinds from '../Blinds';
+import Energy from '../Energy';
 import smartHomeData from '../smartHomeData';
 
 const Dashboard = ({ data }) => {
@@ -22,6 +23,12 @@ const Dashboard = ({ data }) => {
       {
         <Blinds
           state={data.blinds}
+        />
+      }
+      {
+        <Energy
+          electricity={data.energyConsumption.electricity}
+          water={data.energyConsumption.water}
         />
       }
     </main>
