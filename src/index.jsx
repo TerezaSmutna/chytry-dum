@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import Header from './Header';
 import Dashboard from './Dashboard';
-import { smartHomeData } from './smartHomeData.js';
+import smartHomeData from './smartHomeData.js';
 
 const App = () => (
   <>

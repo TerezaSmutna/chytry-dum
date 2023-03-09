@@ -4,14 +4,13 @@ import Lights from '../Lights';
 import Climate from '../Climate';
 import Blinds from '../Blinds';
 import Energy from '../Energy';
-import smartHomeData from '../smartHomeData';
 
 const Dashboard = ({ data }) => {
   return (
     <main className="dashboard">
       {
         <Lights
-          lights={smartHomeData.lights}
+          lights={data.lights}
         />
       }
       {
